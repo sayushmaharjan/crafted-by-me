@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-logo-link">
+                    <h2>Portfolio</h2>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="design.html" class="nav-link">Design</a>
+
+                <a href="mailto:hello@portfolio.com" class="nav-cta">hello@portfolio.com</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 404 Hero Section -->
+    <section class="error-hero">
+        <div class="error-container">
+            <div class="error-content">
+                <div class="error-number">
+                    <span class="digit">4</span>
+                    <div class="zero-container">
+                        <span class="digit zero">0</span>
+                        <div class="floating-elements">
+                            <div class="floating-dot dot-1"></div>
+                            <div class="floating-dot dot-2"></div>
+                            <div class="floating-dot dot-3"></div>
+                            <div class="floating-dot dot-4"></div>
+                        </div>
+                    </div>
+                    <span class="digit">4</span>
+                </div>
+                
+                <h1 class="error-title">Oops! Page Not Found</h1>
+                <p class="error-subtitle">The page you're looking for seems to have wandered off into the digital void.</p>
+                
+                <div class="error-actions">
+                    <a href="index.html" class="cta-button primary">Go Home</a>
+                    <a href="design.html" class="cta-button secondary">View Design Work</a>
+                </div>
+                
+                <div class="error-stats">
+                    <div class="error-stat">
+                        <span class="stat-icon">🎨</span>
+                        <span class="stat-text">Design Projects</span>
+                    </div>
+                    <div class="error-stat">
+                        <span class="stat-icon">🤖</span>
+                        <span class="stat-text">ML Solutions</span>
+                    </div>
+                    <div class="error-stat">
+                        <span class="stat-icon">💡</span>
+                        <span class="stat-text">Creative Ideas</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="error-visual">
+                <div class="geometric-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Navigation -->
+    <div class="floating-nav">
+        <a href="index.html" class="floating-nav-item" title="Home">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="design.html" class="floating-nav-item" title="Design">
+            <i class="fas fa-palette"></i>
+        </a>
+        <a href="mailto:hello@portfolio.com" class="floating-nav-item" title="Contact">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // 404 Page Specific Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animate floating dots
+            const dots = document.querySelectorAll('.floating-dot');
+            dots.forEach((dot, index) => {
+                dot.style.animationDelay = `${index * 0.5}s`;
+            });
+
+            // Animate geometric shapes
+            const shapes = document.querySelectorAll('.shape');
+            shapes.forEach((shape, index) => {
+                shape.style.animationDelay = `${index * 0.3}s`;
+            });
+
+            // Add hover effect to error number
+            const errorNumber = document.querySelector('.error-number');
+            errorNumber.addEventListener('mouseenter', () => {
+                errorNumber.style.transform = 'scale(1.05)';
+            });
+            errorNumber.addEventListener('mouseleave', () => {
+                errorNumber.style.transform = 'scale(1)';
+            });
+
+            // Parallax effect for floating elements
+            window.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+                
+                const floatingElements = document.querySelector('.floating-elements');
+                if (floatingElements) {
+                    floatingElements.style.transform = `translate(${mouseX * 20}px, ${mouseY * 20}px)`;
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

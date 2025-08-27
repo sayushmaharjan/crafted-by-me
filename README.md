@@ -1,51 +1,5 @@
 # Portfolio Website - Webdesigner & ML Engineer
 
-A modern, responsive portfolio website inspired by the [Bazil website](https://en.bazil.fr/) with a clean design and advanced features.
-
-## Features
-
-### 🎨 Design Features
-- **Modern UI/UX**: Clean, minimalist design with smooth animations
-- **Responsive Design**: Fully responsive across all devices
-- **Dark/Light Mode**: Toggle between dark and light themes with persistent preference
-- **Smooth Animations**: CSS animations and transitions for enhanced user experience
-- **Gradient Text**: Beautiful gradient text effects for headings
-
-### 🧭 Navigation
-- **Fixed Navigation Bar**: Always accessible navigation with blur effect
-- **Logo**: Customizable logo in the top left
-- **Navigation Links**: "Design" and "ML" sections
-- **Theme Toggle**: Sun/moon icons for dark/light mode switching
-- **Email CTA**: Direct email contact button
-- **Mobile Menu**: Hamburger menu for mobile devices
-
-### 🏠 Homepage
-- **Hero Section**: Large hero area with greeting and main title
-- **Dual CTA Buttons**: "Webdesigner" and "ML Engineer" call-to-action buttons
-- **Profile Placeholder**: Circular profile image area with gradient background
-- **Animated Wave**: Interactive wave emoji animation
-
-### 📱 Responsive Features
-- **Mobile-First Design**: Optimized for mobile devices
-- **Tablet Support**: Responsive grid layouts
-- **Desktop Optimization**: Enhanced layouts for larger screens
-- **Touch-Friendly**: Optimized touch targets for mobile
-
-### ⚡ Performance
-- **Fast Loading**: Optimized CSS and JavaScript
-- **Smooth Scrolling**: CSS smooth scrolling behavior
-- **Intersection Observer**: Efficient scroll-based animations
-- **Resource Preloading**: Critical resources preloaded for better performance
-
-## File Structure
-
-```
-portfolio-website/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles with dark/light mode
-├── script.js           # JavaScript functionality
-└── README.md           # This file
-```
 
 ## Getting Started
 
@@ -93,16 +47,8 @@ The website uses CSS custom properties (variables) for easy color customization.
 - **HTML5**: Semantic markup
 - **CSS3**: Modern styling with custom properties and Grid/Flexbox
 - **JavaScript (ES6+)**: Interactive functionality
-- **Font Awesome**: Icons
-- **Google Fonts**: Inter font family
 
 ## Features in Detail
-
-### Dark/Light Mode
-- Persistent theme preference using localStorage
-- Smooth transitions between themes
-- Automatic icon switching (sun/moon)
-- Keyboard accessible (Enter/Space to toggle)
 
 ### Mobile Navigation
 - Hamburger menu with smooth animations
@@ -126,12 +72,5 @@ The website uses CSS custom properties (variables) for easy color customization.
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Credits
-
-- Design inspiration: [Bazil website](https://en.bazil.fr/)
-- Icons: [Font Awesome](https://fontawesome.com/)
-- Fonts: [Google Fonts - Inter](https://fonts.google.com/specimen/Inter)
 
 ---
-
-**Ready to showcase your work?** Customize this portfolio and start sharing your Webdesigner and ML Engineer skills with the world! 
